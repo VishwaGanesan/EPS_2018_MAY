@@ -1,0 +1,39 @@
+#include<stdio.h>
+int main()
+{
+ int m,a[100][100],b[100][100],ele,tar;
+ int i1,j1,i,j,count=0;
+ scanf("%d%d",&m,&tar);
+ for(i=0;i<m;i++)
+ {
+   for(j=0;j<m;j++)
+   {
+	scanf("%d",&a[i][j]);
+   }
+ }
+ for(i=0;i<m;i++)
+ {
+   for(j=0;j<m;j++)
+    {
+	scanf("%d",&b[i][j]);
+    }
+ }
+ for(i=0;i<m;i++)
+ {
+   for(j=0;j<m;j++)
+   {
+     ele=a[i][j];
+     for(i1=0;i1<m;i1++)
+     {
+       for(j1=0;j1<m;j1++)
+       {
+         if(ele+b[i1][j1]==tar)
+	{
+           count++;
+	}
+      }
+    }
+ }
+}
+printf("%d",count);
+}   
