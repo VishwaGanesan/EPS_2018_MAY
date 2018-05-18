@@ -6,7 +6,7 @@ void printEven(int start,int end)
     {
     	printf("%d ",start);
     	start+=2;
-	}
+    }
 }
 void printOdd(int start,int end)
 {
@@ -25,9 +25,8 @@ int main()
 {
 	int a,start,end;
 	scanf("%d %d %d",&a,&start,&end);
-  void (*fun_ptr)(int,int) = a==1?printOdd:printEven; // syntax return_type ( * func_ptr ) (paramater) = functionName
+  	void (*fun_ptr)(int,int) = a==1?printOdd:printEven;   // syntax return_type ( * func_ptr ) (paramater) = functionName
  	dispatcher(fun_ptr,start,end);           	
    	//	fun_ptr(start,end);								 				
- 
-    return 0;
+ 	return 0;
 }
