@@ -2,7 +2,7 @@
 int main()
 {
 	int dividend,divisor,result;
-	int count=0,remainder=0,temp;
+	int count=0,temp;
 	printf("Dividend = ");
 	scanf("%d",&dividend);
 	printf("\nDivisor = ");
